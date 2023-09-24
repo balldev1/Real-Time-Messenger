@@ -32,3 +32,53 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+\*\*\* Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher
+
+npm install
+
+- react-icons
+  -react-hook-form
+- clsx
+  npm i @tailwindcss/forms
+
+\*\*\* back end
+npm install -D prisma
+npx prisma init
+/เมือ กำหนด model เสร็จ
+npx prisma db push
+
+\*\*\* NextAuth
+npm install next-auth@latest @prisma/client @next-auth/prisma-adapter bcrypt
+npm install -D @types/bcrypt
+-next-auth@latest จัดการระบบการตรวจสอบและการเข้าสู่ระบบใ
+-@prisma/clien เข้าถึงฐานข้อมูล app/libs/prismadb.ts
+-@next-auth/prisma-adapter ใช้ในการเชื่อมต่อกับ Prisma Client
+-bcrypt เข้ารหัส
+
+\*\*\* api
+npm install axios
+
+\*\*\*alert
+npm install react-hot-toast
+
+npm install next-superjson-plugin แปลงข้อมูล javascript เป็น json
+
+npm install date-fns วันที่และเวลา
+
+npm install next-cloudinary เก็บภาพไว้ที clound
+CldUploadButton ปุ่มฝากรูป
+
+npm install @headlessui/react ui frontend
+
+npm install react-select ฟังชั่น select
+
+npm install react-spinners => loading
+
+pusher api รับส่งข้อมูลแบบ real-time Node.js
+npm install pusher pusher-js
+
+npm install loadsh จัดการข้อมูล
+npm install -D @types/lodash
+
+npm install zustand จัดการสถานะ state โดยไม่ใช้ context redux
